@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+//класс с функцией для запуска приложения
 public class paintIT
 {
     public static void main(String[] args)
@@ -35,8 +36,8 @@ class PaintWindow extends JFrame
         //установить панель слева, а место для рисования по центру
         content.add(panel, BorderLayout.WEST);
         content.add(drawPad, BorderLayout.CENTER);
-
-//add the color buttons:
+        
+        //добавить кнопки с цветами
         makeColorButton(Color.BLUE);
         makeColorButton(Color.MAGENTA);
         makeColorButton(Color.RED);
